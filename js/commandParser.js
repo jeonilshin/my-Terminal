@@ -70,6 +70,18 @@ function processCommand(command) {
       commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
       renderMultipleLines(SUDO, 80);
       break;
+    case "touch":
+      commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
+      renderMultipleLines(TOUCH, 80);
+      break;
+    case "vi":
+      commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
+      renderMultipleLines(VI, 80);
+      break;
+    case "cat":
+      commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
+      renderMultipleLines(VI, 80);
+      break;
     case "education":
       commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
       if (mql.matches) {
@@ -80,23 +92,23 @@ function processCommand(command) {
       break;
     case "pwd":
       commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
-      renderLine("<br>/home/ericalpizar/projects/cliPortafolio<br><br>");
+      renderLine("/home/shin");
       break
     case "echo":
       commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
       const printCommands = args.slice(1).join(" ");
-      renderLine("<br>" + printCommands + "<br></br>", 80);
+      renderLine(printCommands, 80);
       break;
     case "cd":
       commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
-      if (args[1] === "music") {
-        renderLine("Opennig music...", 80);
-        newTab("https://open.spotify.com/user/ealpizaro?si=d3239ad0630d4390");
-      } else if (args[1] === "photos") {
-        renderLine("Opennig photos...", 80);
+      if (args[1] === "github") {
+        renderLine("Redirecting to my Github Page...", 80);
+        newTab("https://github.com/jeonilshin");
+      } else if (args[1] === "web portfolio") {
+        renderLine("Redirecting to my Web Portfolio", 80);
         newTab("https://photos.app.goo.gl/DHzDdzHrc4K46CrCA");
       } else if (args[1] === "videos") {
-        renderLine("Opennig videos...", 80);
+        renderLine("Opening Mystery Gift...", 80);
         newTab("https://www.youtube.com/playlist?list=FLBt0XXUPegLUnars8P-eogQ");
       } else {
         renderLine("Directory not found: " + args.slice(1).join(" "));

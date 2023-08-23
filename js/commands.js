@@ -124,17 +124,15 @@ BANNER = [
   "░╚═══██╗ ██╔══██║ ██║ ██║╚████║░░░░╚═══██╗ ",
   "██████╔╝ ██║░░██║ ██║ ██║░╚███║░░░██████╔╝ ",
   "╚═════╝░ ╚═╝░░╚═╝ ╚═╝ ╚═╝░░╚══╝░░░╚═════╝░ ",
-  "   █▀█ █▀█ █▀█ ▀█▀ █▀▀ █▀█ █░░ █ █▀█       ",
-  "   █▀▀ █▄█ █▀▄ ░█░ █▀░ █▄█ █▄▄ █ █▄█       ",
-  "                                           ",
+  "      ▀█▀ █▀▀ █▀▄ █▄█ ▀█▀ █▀█ █▀█ █        ",
+  "       █  █▀▀ █▀▄ █ █  █  █ █ █▀█ █        ",
+  "       ▀  ▀▀▀ ▀ ▀ ▀ ▀ ▀▀▀ ▀ ▀ ▀ ▀ ▀▀▀      ",
   ]
 
 DIRECTORIES = [ 
-"<br>",
 "github/",
 "web portfolio/",
-"mystery/",
-"<br>"
+"mystery/"
 ]
 
 
@@ -182,25 +180,35 @@ EDUCATION_INFO = [
 ]
 
 MOBILE_EDUCATION_INFO = [
-  "<br><strong>B.sc. Computer Science and Engineering</strong>",
-  "Costa Rica Institute of Technology",
-  "2020 - 2024",
-  "Honor student with a perfect 4.0 GPA",
-  "<br>",
-  "<strong>B.sc. Systems Analysis</strong>",
-  "Costa Rica National University",
-  "2019 - 2020",
-  "<br>",
-  "<strong>Industrial Electronics Technician</strong>",
-  "Colegio Tecnico Profesional CIT",
-  "2015 - 2018",
-  "<br>"
+  "<strong>Stella Maris Academy of Davao</strong>",
+  "2011. 6 - 2015. 5",
+  "<strong>St. Paul College of Davao</strong>",
+  "2015. 6 - 2017. 5",
+  "Graduated (졸업)",
+  "<strong>부산다문화국제학교</strong> (Busan Multicultural International School)",
+  "2017. 7 - 2018. 2",
+  "<strong>영도제일중학교</strong> (Yeongdo Jeil Middle School)",
+  "2018. 3 - 2021. 2",
+  "Graduated (졸업)",
+  "<strong>대양고등학교</strong> (Daeyang High School)",
+  "2021. 3 - 2024. 2",
+  "To be Graduated (졸업 예정)",
 ]
 
 
 TERMINAL_INFO = [
-'Welcome to my interactive web terminal portafolio',
-"For a list of available commands, type <span class=\"command\">'help'</span>."
+"                            ",
+'Hi! Welcome to my Terminal!',
+"--------",
+"                            ",
+"I'm Studying to be a...",
+"--------",
+" * Cloud Engineer ",
+" * DevOps Engineer ",
+" * Full-Stack Engineer ",
+"                            ",
+"For a list of available commands, type <span class=\"command\">'help'</span>.",
+"                            ",
 ]
 
 TERMINAL_INFO_MOBILE = [
@@ -221,7 +229,7 @@ MOBILE_BANNER = [
 "░╚═══██╗ ██╔══██║ ██║ ██║╚████║░░░░╚═══██╗ ",
 "██████╔╝ ██║░░██║ ██║ ██║░╚███║░░░██████╔╝ ",
 "╚═════╝░ ╚═╝░░╚═╝ ╚═╝ ╚═╝░░╚══╝░░░╚═════╝░ ",
-"      ░▀█▀░█▀▀░█▀▄░█▄█░▀█▀░█▀█░█▀█░█░░     ",
-"      ░░█░░█▀▀░█▀▄░█░█░░█░░█░█░█▀█░█░░     ",
-"      ░░▀░░▀▀▀░▀░▀░▀░▀░▀▀▀░▀░▀░▀░▀░▀▀▀     ",
+"     ░▀█▀░█▀▀░█▀▄░█▄█░▀█▀░█▀█░█▀█░█░░      ",
+"     ░░█░░█▀▀░█▀▄░█░█░░█░░█░█░█▀█░█░░      ",
+"     ░░▀░░▀▀▀░▀░▀░▀░▀░▀▀▀░▀░▀░▀░▀░▀▀▀      ",
 ]
