@@ -29,6 +29,10 @@ function processCommand(command) {
   renderLine(BASE_ROOT + command, "no-animation", 0);
 
   switch (args[0]) {
+    case "":
+      commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
+      renderMultipleLines(EMPTY, 80);
+      break;
     case "help":
       commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
       renderMultipleLines(COMMAND_LIST, 80);
@@ -53,9 +57,9 @@ function processCommand(command) {
       commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
       renderBanner();
       break;
-    case "curriculum":
+    case "resume":
       commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
-      newTab("https://ealpizarp.github.io/erick-alpizar-cv/");
+      newTab("");
       break;
     case "clear":
       commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
@@ -65,6 +69,10 @@ function processCommand(command) {
     case "ls":
       commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
       renderMultipleLines(DIRECTORIES, 80);
+      break;
+    case "rm":
+      commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
+      renderMultipleLines(RM, 80);
       break;
     case "sudo":
       commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
@@ -115,8 +123,6 @@ function processCommand(command) {
       }
       break;
       case "history":
-        renderLine("<br>");
-        comandHistory.push("<br>");
         renderMultipleLines(comandHistory, 80);
         comandHistory.pop()
         break;

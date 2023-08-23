@@ -23,28 +23,24 @@ const ABOUT = [
   "<br>",
   "Hello there!👋" ,
   "              ",
-  "I'm Eric, a Computer Science ",
-  "and Engineering student with ",
-  "a passion for technology! 🧑‍💻",
+  "I'm Shin, a Student, Studying ",
+  "hard to be a Cloud Engineer.",
+  "I love cats and to code. 🧑‍💻",
   "                            ",
   "                            ",
-  "My love for technology runs deep", 
-  "and I've been fortunate enough to",
-  "hone my skills in algorithms, math",
-  "and other technical fields that",
-  "keep me engaged and inspired.",
-  "                             ",
-  "                             ",
-  "I find joy in constantly learning new",
-  "things and tackling challenges with",
-  "creativity and innovation.",
+  "I have always been interested in",
+  "computer since I was a middle school",
+  "student. I always wanted to be a developer",
+  "It was always my dream to make an app to",
+  "make people happy and to make their lives",
+  "easier.",
   "                                     ",
-  "As I approach my final year of my",
-  "degree, I'm eager to explore job ",
+  "As I approach my final year of ",
+  "highschool, I'm eager to explore job ",
   "opportunities and dive deeper into", 
-  "research projects. Being at the" ,
-  "forefront of technological innovation ",
-  "is a true passion of mine. 🚀",,
+  "research projects. It is now my" ,
+  "time to be a full time Full Stack ",
+  "Engineer. 🚀",,
   "<br>"
 ];
 
@@ -103,7 +99,7 @@ COMMAND_LIST = [
   '<span class="command">about</span>          Learn more about me',
   '<span class="command">social</span>         Display social networks',
   '<span class="command">education</span>      Show my education',
-  '<span class="command">curriculum</span>     Open my web curriculum',
+  '<span class="command">resume</span>         Open my web curriculum',
   '<span class="command">projects</span>       View some of my projects',
   '<span class="command">history</span>        Show command history',
   '<span class="command">email</span>          Feel free to reach out',
@@ -156,6 +152,12 @@ VI = [
 CAT = [
   "You are not an administrator."
 ]
+
+RM = [
+  "You are not an administrator."
+]
+
+EMPTY = []
 
 EDUCATION_INFO = [
   "<br><strong>Stella Maris Academy of Davao</strong>",
@@ -212,13 +214,16 @@ TERMINAL_INFO = [
 ]
 
 TERMINAL_INFO_MOBILE = [
-  'Welcome to my terminal web portafolio!',
-  "                                 ",
-  "For a list of available commands,", 
-  "type <span class=\"command\">'help'</span>.",
-  "                                          ",
-  "Version (1.0)",
-  "                                          "
+  'Hi! Welcome to my Terminal!',
+  "--------",
+  "I'm Studying to be a...",
+  "--------",
+  " * Cloud Engineer ",
+  " * DevOps Engineer ",
+  " * Full-Stack Engineer ",
+  "---------",
+  "For a list of available commands, type <span class=\"command\">'help'</span>.",
+  "                            ",
   ]
 
 MOBILE_BANNER = [
