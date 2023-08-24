@@ -57,9 +57,9 @@ function processCommand(command) {
       commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
       renderBanner();
       break;
-    case "resume":
+    case "notion":
       commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
-      newTab("");
+      newTab("https://www.notion.so/Jeon-Il-Shin-454c44a1e1934957b5b27efaee6774cd");
       break;
     case "clear":
       commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
@@ -122,10 +122,10 @@ function processCommand(command) {
         newTab("https://github.com/jeonilshin");
       } else if (args[1] === "webPortfolio") {
         renderLine("Redirecting to my Web Portfolio", 80);
-        newTab("https://photos.app.goo.gl/DHzDdzHrc4K46CrCA");
+        newTab("https://jeonilshin.com");
       } else if (args[1] === "videos") {
         renderLine("Opening Mystery Gift...", 80);
-        newTab("https://www.youtube.com/playlist?list=FLBt0XXUPegLUnars8P-eogQ");
+        newTab("https://www.youtube.com/watch?v=bgJ_1WuhUig");
       } else {
         renderLine("Directory not found: " + args.slice(1).join(" "));
       }
