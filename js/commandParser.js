@@ -88,8 +88,16 @@ function processCommand(command) {
       break;
     case "cat":
       commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
-      renderMultipleLines(VI, 80);
-      break;
+      if (args[1] === "github") {
+        renderLine("This is my Github Page: https://github.com/jeonilshin", 80);
+      } else if (args[1] === "webPortfolio") {
+        renderLine("My Web Portfolio Page's Link is... https://jeonilshin.com", 80);
+      } else if (args[1] === "mystery") {
+        renderLine("Woops! crash loop back..", 80);
+      } else {
+        renderLine("Input Directory! " + args.slice(1).join(" "));
+      }
+      break
     case "education":
       commandIndex = addCommandToHistory(args,comandHistory, commandIndex);
       if (mql.matches) {
@@ -112,7 +120,7 @@ function processCommand(command) {
       if (args[1] === "github") {
         renderLine("Redirecting to my Github Page...", 80);
         newTab("https://github.com/jeonilshin");
-      } else if (args[1] === "web portfolio") {
+      } else if (args[1] === "webPortfolio") {
         renderLine("Redirecting to my Web Portfolio", 80);
         newTab("https://photos.app.goo.gl/DHzDdzHrc4K46CrCA");
       } else if (args[1] === "videos") {
@@ -240,7 +248,7 @@ function clearInput(inputElement) {
  */
 function renderMultipleLines(lines, delay=0, style="", asciiArt=false) {
   lines.forEach((line, index) => {
-      renderLine(line, style, index * delay, asciiArt);
+    renderLine(line, style, index * delay, asciiArt);
   })
 
 }

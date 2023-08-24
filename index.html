@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="command" onclick="focusOnTextArea()">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,11 +20,11 @@
 
 
   <body>
-    <div onclick="focusOnTextArea()">
+    <div>
       <div id="terminal">
         <a id="contentHook"></a>
       </div>
-      <div id="command" onclick="focusOnTextArea()">
+      <div>
         <textarea
           type="text"
           id="texter"
@@ -32,7 +32,7 @@
           autofocus
         ></textarea>
         <div id="liner">
-          <span id="typer"></span><b class="cursor" id="cursor">█</b>
+          <span id="typer"></span><b class="cursor" id="cursor">|</b>
           <span id="mobileInput"><input type="text" autocapitalize="none" autocorrect="off" spellcheck="false" autocomplete="off" inputmode="text" ></span>
         </div>
       </div>

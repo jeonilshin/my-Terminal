@@ -1,16 +1,8 @@
-/* :root {
-    --background: #002b36;
-    --primaryTextColor: #93a1a1;
-    --secundaryTextColor: #73ABAD;
-    --highlightTextColor: #B89076;
-    --white: #fff;
-  } */
-
   :root {
     --background: #2B2B2B;
     --primaryTextColor: #e5e5e5;
     --secundaryTextColor: #ffffff;
-    --highlightTextColor: #0fa8cd;
+    --highlightTextColor: #00ff00;
     --white: #fff;
     --baseDirectory: "/home/shin $";
   }
@@ -75,6 +67,11 @@ body {
       opacity: 0;
     }
   }
+
+  .directory {
+    color: rgb(109, 135, 248);
+  }
+
   #command {
     cursor: text;
     height: 50px;

@@ -4,21 +4,6 @@ const GITHUB = "https://github.com/jeonilshin";
 const EMAIL = 'cloud.jeonilshin@gmail.com';
 const USERNAME = "jeonilshin";
 
-// const ABOUT = [
-//   "<br>",
-//   "Hello and welcome to my portfolio website!",
-//   "My name is Eric, and I'm a final year Computer Science and Engineering student.",
-//   "Throughout my degree, I've honed my skills in algorithms, mathematics, and other",
-//   "technical fields. I'm passionate about technology and enjoy learning new things, ",
-//   "as well as tackling challenges with creativity and innovation. In my free time,", 
-//   "I enjoy reading, exercising, and playing video games occasionally. I believe that ",
-//   "a balanced lifestyle is essential to maintaining a healthy body and mind, which is ",
-//   "crucial for success in any field. As I approach the end of my studies, I'm excited ",
-//   "to explore job opportunities and research collaborations. I'm passionate about being",
-//   "at the forefront of technological innovation and making a positive impact in the world.",
-//   "<br>"
-// ];
-
 const ABOUT = [
   "<br>",
   "Hello there!👋" ,
@@ -39,8 +24,8 @@ const ABOUT = [
   "highschool, I'm eager to explore job ",
   "opportunities and dive deeper into", 
   "research projects. It is now my" ,
-  "time to be a full time Full Stack ",
-  "Engineer. 🚀",,
+  "time to show my skills and to be",
+  " a full time Full Stack Engineer. 🚀",,
   "<br>"
 ];
 
@@ -59,37 +44,29 @@ PROJECTS = [
   "<br>",
   "Here are some of my projects:",
   "<br>",
-  "<strong> - Officia App <strong>",
-  "A web-based marketplace connecting",
-  "independent professionals with clients",
-  "seeking high-quality services in",
-  "Costa Rica",
-  "<a href=https://github.com/ealpizarp/officia-app/tree/db_branch> GitHub link",
-  "Tech stack: PHP, Laravel, Tailwind, JS",
+  "<strong> - Website <strong>",
+  "Responsive Portfolio Website",
+  "it has clean and modern design",
+  "and has animation with responsive features",
+  "<a href=https://github.com/jeonilshin/responsive-Portfolio> GitHub link",
+  "Tech stack: HTML, CSS, JavaScript",
   "<br>",
-  "<strong> - Extended Triangle Compiler <strong>",
-  "An extension of the Triangle compiler",
-  "originally developed in the book",
-  "Programming Language Processors in",
-  "Java (Watt & Brown, 2000)",
-  "Tech stack: Java",
-  "<a href=https://github.com/ealpizarp/Extended-Triangle-Compiler> GitHub link",
+  "<strong> - Website <strong>",
+  "Website with Next.JS",
+  "website made with Next.JS, it has",
+  "high level design with animation and",
+  "responsive features",
+  "Tech stack: Next JS, Tailwind CSS, JavaScript",
+  "<a href=https://github.com/jeonilshin/portfolio-with-Next.JS> GitHub link",
   "<br>",
-  "<strong> - Climate Crawler <strong>",
-  "Hadoop-based data processing solution",
-  "for web crawler data with a", 
-  "web interface",
-  "Tech stack: Hadoop, Python, React",
-  "<a href=https://github.com/ealpizarp/Climate-Crawler> GitHub link",
+  "<strong> - Web App <strong>",
+  "Dropbox with GoLang",
+  "A cloud storage app like Dropbox", 
+  "that you can upload and save it",
+  "to your AWS S3 Bucket",
+  "<a href=https://github.com/jeonilshin/dropbox-with-golang> GitHub link",
   "<br>",
-  "<strong> - Angular Weather app <strong>",
-  "Angular weather app that uses an",
-  "API for real-time weather data.",
-  "Tech stack: Angular, CSS, Typescript",
-  "<a href=https://github.com/ealpizarp/angular-weather-app> GitHub link",
-  "<br>",
-  "<strong>Check out some of my other projects",
-  "<strong> in my </strong> <a class=\"command\" href=https://github.com/ealpizarp/> GitHub profile</a> <strong>",
+  "<strong> More at my GitHub <strong>",
   "<br>"
 
 ];
@@ -109,6 +86,7 @@ COMMAND_LIST = [
   '<span class="command">ls</span>             List directory content',
   '<span class="command">cd &lt;directory&gt</span> Change directory',
   '<span class="command">help</span>           Display all commands',
+  '<span class="command">cat</span>            Print file content',
   "<br>",
 ];
 
@@ -126,12 +104,10 @@ BANNER = [
   ]
 
 DIRECTORIES = [ 
-"github/",
-"web portfolio/",
-"mystery/"
+"<span class='directory'>github/</span>",
+"mystery",
+"<span class='directory'>webPortfolio/</span>",
 ]
-
-
 
 EMAIL_INFO = [
   "<a href=mailto:" + EMAIL + ">" + EMAIL +"</a>",
@@ -149,10 +125,6 @@ VI = [
   "You are not an administrator."
 ]
 
-CAT = [
-  "You are not an administrator."
-]
-
 RM = [
   "You are not an administrator."
 ]
@@ -160,41 +132,47 @@ RM = [
 EMPTY = []
 
 EDUCATION_INFO = [
-  "<br><strong>Stella Maris Academy of Davao</strong>",
+  "|",
+  "<strong>Stella Maris Academy of Davao</strong>",
   "2011. 6 - 2015. 5",
-  "                                                  ",
+  "|",
   "<strong>St. Paul College of Davao</strong>",
   "2015. 6 - 2017. 5",
   "Graduated (졸업)",
-  "                                                  ",
+  "|",
   "<strong>부산다문화국제학교</strong> (Busan Multicultural International School)",
   "2017. 7 - 2018. 2",
-  "                                                  ",
+  "|",
   "<strong>영도제일중학교</strong> (Yeongdo Jeil Middle School)",
   "2018. 3 - 2021. 2",
   "Graduated (졸업)",
-  "                                                  ",
+  "|",
   "<strong>대양고등학교</strong> (Daeyang High School)",
   "2021. 3 - 2024. 2",
   "To be Graduated (졸업 예정)",
-  "                                                  ",
-
+  "|",
 ]
 
 MOBILE_EDUCATION_INFO = [
+  "|",
   "<strong>Stella Maris Academy of Davao</strong>",
   "2011. 6 - 2015. 5",
+  "|",
   "<strong>St. Paul College of Davao</strong>",
   "2015. 6 - 2017. 5",
   "Graduated (졸업)",
+  "|",
   "<strong>부산다문화국제학교</strong> (Busan Multicultural International School)",
   "2017. 7 - 2018. 2",
+  "|",
   "<strong>영도제일중학교</strong> (Yeongdo Jeil Middle School)",
   "2018. 3 - 2021. 2",
   "Graduated (졸업)",
+  "|",
   "<strong>대양고등학교</strong> (Daeyang High School)",
   "2021. 3 - 2024. 2",
   "To be Graduated (졸업 예정)",
+  "|",
 ]
 
 
@@ -208,6 +186,10 @@ TERMINAL_INFO = [
 " * Cloud Engineer ",
 " * DevOps Engineer ",
 " * Full-Stack Engineer ",
+"--------",
+"                            ",
+"* This terminal is new, so I still haven't added the <span class=\"command\">'TAB TO COMPLETE'</span> feature.",
+"--------",
 "                            ",
 "For a list of available commands, type <span class=\"command\">'help'</span>.",
 "                            ",
@@ -227,14 +209,14 @@ TERMINAL_INFO_MOBILE = [
   ]
 
 MOBILE_BANNER = [
-"                                  ® 2023   ",
-"░██████╗ ██╗░░██╗ ██╗ ███╗░░██╗██╗░██████╗ ",
-"██╔════╝ ██║░░██║ ██║ ████╗░██║╚█║██╔════╝ ",
-"╚█████╗░ ███████║ ██║ ██╔██╗██║░╚╝╚█████╗░ ",
-"░╚═══██╗ ██╔══██║ ██║ ██║╚████║░░░░╚═══██╗ ",
-"██████╔╝ ██║░░██║ ██║ ██║░╚███║░░░██████╔╝ ",
-"╚═════╝░ ╚═╝░░╚═╝ ╚═╝ ╚═╝░░╚══╝░░░╚═════╝░ ",
-"     ░▀█▀░█▀▀░█▀▄░█▄█░▀█▀░█▀█░█▀█░█░░      ",
-"     ░░█░░█▀▀░█▀▄░█░█░░█░░█░█░█▀█░█░░      ",
-"     ░░▀░░▀▀▀░▀░▀░▀░▀░▀▀▀░▀░▀░▀░▀░▀▀▀      ",
-]
+  "                                  ® 2023   ",
+  "░██████╗ ██╗░░██╗ ██╗ ███╗░░██╗██╗░██████╗ ",
+  "██╔════╝ ██║░░██║ ██║ ████╗░██║╚█║██╔════╝ ",
+  "╚█████╗░ ███████║ ██║ ██╔██╗██║░╚╝╚█████╗░ ",
+  "░╚═══██╗ ██╔══██║ ██║ ██║╚████║░░░░╚═══██╗ ",
+  "██████╔╝ ██║░░██║ ██║ ██║░╚███║░░░██████╔╝ ",
+  "╚═════╝░ ╚═╝░░╚═╝ ╚═╝ ╚═╝░░╚══╝░░░╚═════╝░ ",
+  "      ▀█▀ █▀▀ █▀▄ █▄█ ▀█▀ █▀█ █▀█ █        ",
+  "       █  █▀▀ █▀▄ █ █  █  █ █ █▀█ █        ",
+  "       ▀  ▀▀▀ ▀ ▀ ▀ ▀ ▀▀▀ ▀ ▀ ▀ ▀ ▀▀▀      ",
+  ]
