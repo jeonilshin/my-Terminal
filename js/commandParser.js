@@ -1,26 +1,15 @@
-
 const mql = window.matchMedia("(max-width: 600px)");
 
 window.onload = init;
 
-
-/**
-Initializes the terminal and sets the initial position of the cursor.
-*/
 function init() {
   cursor.style.left = "0px";
   renderBanner();
 }
 
-let comandHistory = []; //Array containing the command history.
-let commandIndex = 0  //Index for command history handling.
+let comandHistory = [];
+let commandIndex = 0
 
-
-/**
- * Processes a command entered in the terminal and executes the corresponding action.
- *
- * @param {string} command - The command to process.
- */
 
 function processCommand(command) {
 
@@ -155,14 +144,6 @@ mobileInput.addEventListener("keydown", (event) => {
   } 
 });
 
-
-
-/**
- * Adds a new line to the terminal output.
- * @param {string} text - The text to add.
- * @param {string} style - The CSS class to apply to the line.
- * @param {number} time - The delay in milliseconds before adding the line.
- */
 function renderLine(text, style, time, asciiArt=false) {
   let formattedText = text;
   if (asciiArt) {
@@ -177,11 +158,6 @@ function renderLine(text, style, time, asciiArt=false) {
   }, time);
 }
 
-/**
- * Replaces multiple spaces in a string with double non-breaking spaces.
- * @param {string} text - The text to format.
- * @returns {string} The formatted text.
- */
 function formatASCIIArt(text) {
   const space = " ";
   const noBreakingSpace = "&nbsp";
@@ -195,12 +171,6 @@ function formatText(text) {
   return text.replaceAll(doubleSpace, doubleNoBreakingSpace);
 }
 
-/**
- * Creates a new line element with the given text and style.
- * @param {string} text - The text of the line.
- * @param {string} style - The CSS class to apply to the line.
- * @returns {HTMLElement} The new line element.
- */
 function createLine(text, style) {
   const line = document.createElement("p");
   line.className = style;
@@ -208,21 +178,9 @@ function createLine(text, style) {
   return line;
 }
 
-/**
- * Inserts an element before a reference element.
- * @param {HTMLElement} element - The element to insert.
- * @param {HTMLElement} referenceElement - The element to insert the new element before.
- */
 function insertLine(element, referenceElement) {
   referenceElement?.parentNode?.insertBefore(element, referenceElement);
 }
-
-// /**
-//  * Scrolls the window to the bottom of the page.
-//  */
-// function scrollToBottom() {
-//   window.scrollTo(0, document.body.offsetHeight);
-// }
 
 function scrollToBottom() {
   window.scrollTo({
@@ -231,33 +189,16 @@ function scrollToBottom() {
   });
 }
 
-
-/**
- * Clears the input of the textarea
- */
 function clearInput(inputElement) {
   inputElement.value = "";
 }
 
-
-/**
- * Renders multiple lines with a delay between each one.
- * @param {Array} lines - Array of strings to render as separate lines.
- * @param {string} style - The CSS class to apply to the lines.
- * @param {number} delay - The delay in milliseconds between rendering each line.
- */
 function renderMultipleLines(lines, delay=0, style="", asciiArt=false) {
   lines.forEach((line, index) => {
     renderLine(line, style, index * delay, asciiArt);
   })
 
 }
-
-/**
-Renders a banner based on the screen width.
-@function
-@returns {void}
-*/
 
 function renderBanner() {
     if (mql.matches) {
@@ -273,14 +214,6 @@ function renderBanner() {
     }
 }
 
-/**
-Clears the terminal.
-@function
-@param {HTMLElement} root - The root element of the terminal.
-@param {HTMLElement} hook - The hook that contains all the previous content.
-@returns {HTMLElement} A cleared hook.
-*/
-
 function clearTerminal(root, hook) {
   const id = hook.id
   root.innerHTML = '<a id="' + id + '"></a>';
@@ -288,28 +221,11 @@ function clearTerminal(root, hook) {
   return hook;
 }
 
-/**
-Opens a link in a new tab.
-@function
-@param {string} link - The link to be opened.
-@returns {void}
-*/
-
 function newTab(link) {
   setTimeout(function() {
     window.open(link, "_blank");
   }, 500);
 }
-
-/**
-
-Adds a command to the command history array.
-@function
-@param {string[]} commands - The commands to be added.
-@param {string[]} historyArray - The array that stores the command history.
-@param {number} currentIndex - The index of the current command in the history.
-@returns {number} The index of the new command in the history.
-*/
 
 function addCommandToHistory(commands, historyArray, currentIndex) {
   const commandString = commands.join(" ");
@@ -317,29 +233,11 @@ function addCommandToHistory(commands, historyArray, currentIndex) {
   return currentIndex + 1;
 }
 
-
-/**
-
-Formats a command by converting it to lower case, trimming it, and splitting it into an array.
-@function
-@param {string} command - The command to be formatted.
-@returns {string[]} The formatted command as an array of strings.
-*/
-
 function formatCommand(command) {
   command = command.toLowerCase();
   command = command.trim();
   return command.split(" ");
 }
-
-
-/**
-
-Handles the "Enter" key press event.
-@function
-@param {KeyboardEvent} event - The event object.
-@returns {void}
-*/
 
 function handleEnterKeyPress(event) {
   if (event.key === "Enter") {
@@ -347,13 +245,6 @@ function handleEnterKeyPress(event) {
     clearInput(textAreaInput);
   }
 }
-
-/**
-Handles the "ArrowUp" key press event.
-@function
-@param {KeyboardEvent} event - The event object.
-@returns {void}
-*/
 
 function handleArrowUpKeyPress(event) {
   if (event.key === "ArrowUp") {
@@ -365,15 +256,6 @@ function handleArrowUpKeyPress(event) {
     }
   }
 }
-
-
-/**
-
-Handles the "ArrowDown" key press event.
-@function
-@param {KeyboardEvent} event - The event object.
-@returns {void}
-*/
 
 function handleArrowDownKeyPress(event) {
   if (event.key === "ArrowDown" && commandIndex < comandHistory.length) {
